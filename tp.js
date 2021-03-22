@@ -33,3 +33,18 @@ function tp(){
     }
 }
 setInterval(tp,1000);
+
+
+
+
+
+function fonte(let fonte){
+    let tabela = document.getElementsByTagName("table");
+    let tr = tabela[0].getElementsByTagName("tr");
+    for(let x = 0; x < tr.length; x++){
+    let td = tr[x].getElementsByTagName("td");
+        for(let i=0; i < td.length; i++){
+            td[i].style.fontSize = fonte+"px";
+        }
+    }
+}
