@@ -42,29 +42,35 @@ setInterval(tp,1000);
 var t = 12;
 function aumentar(){
     t = t+1;
-    let tabela = document.getElementsByTagName("table");
-    let tr = tabela[0].getElementsByTagName("tr");
-    for(let x = 0; x < tr.length; x++){
-    let td = tr[x].getElementsByTagName("td");
-    	for(let i = 0; i < td.length; i++){
-	    td[i].style.removeProperty('max-height');
-	    td[i].style.fontSize = t+"px";
-        }
+    let itens = document.getElementsByClassName("ant-collapse-item");
+    for(let z = 0; z < itens.length; z++){
+	    let tabela = itens[z].getElementsByTagName("table");
+	    let tr = tabela[0].getElementsByTagName("tr");
+	    for(let x = 0; x < tr.length; x++){
+	    let td = tr[x].getElementsByTagName("td");
+		for(let i = 0; i < td.length; i++){
+		    td[i].style.removeProperty('max-height');
+		    td[i].style.fontSize = t+"px";
+		}
+	    }
     }
 }
 function diminuir(){
     t = t-1;
-    let tabela = document.getElementsByTagName("table");
-    let tr = tabela[0].getElementsByTagName("tr");
-    for(let x = 0; x < tr.length; x++){
-    let td = tr[x].getElementsByTagName("td");
-    	for(let i = 0; i < td.length; i++){
-	    td[i].style.removeProperty('max-height');
-	    td[i].style.fontSize = t+"px";
-        }
+    let itens = document.getElementsByClassName("ant-collapse-item");
+    for(let z = 0; z < itens.length; z++){
+	    let tabela = document.getElementsByTagName("table");
+	    let tr = tabela[0].getElementsByTagName("tr");
+	    for(let x = 0; x < tr.length; x++){
+	    let td = tr[x].getElementsByTagName("td");
+		for(let i = 0; i < td.length; i++){
+		    td[i].style.removeProperty('max-height');
+		    td[i].style.fontSize = t+"px";
+		}
+	    }
     }
 }
-var elemento_pai = document.body;
+var elemento_pai = document.body.getElementsByClassName("css-1ku6cjw")[1]
 var b1 = document.createElement('button');
 var b2 = document.createElement('button');
 b1.addEventListener('click',aumentar);
@@ -79,4 +85,4 @@ b1.style.height = "30px";
 b1.style.width = "30px";
 b2.style.height = "30px";
 b2.style.width = "30px";
-b1.style.marginLeft = "90%";
+
