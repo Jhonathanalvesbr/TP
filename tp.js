@@ -1,4 +1,8 @@
 function tp(){
+    let e = document.getElementsByTagName("td");
+    for(let x = 0; x < e.length; x++){
+        e[x].style.padding = "1px";
+    }
     let lauda = document.getElementsByClassName("ant-table-row");
     let existe = "nao";
     for(let x = 0; x < lauda .length; x++){
