@@ -1,8 +1,14 @@
 function tp(){
-    let e = document.getElementsByTagName("td");
+    /*let e = document.getElementsByTagName("td");
     for(let x = 0; x < e.length; x++){
         e[x].style.padding = "1px";
+    }*/
+    let e = document.getElementsByTagName("table");
+    for(let x = 0; x < e.length; x++){
+	e[x].style.tableLayout = "auto";
     }
+    e = document.getElementsByTagName("td");
+    e[3].style.width = "50%";
     let lauda = document.getElementsByClassName("ant-table-row");
     let existe = "nao";
     for(let x = 0; x < lauda .length; x++){
@@ -43,6 +49,11 @@ setInterval(tp,1000);
 
 
 //TAMANHO!!
+let e = document.getElementsByTagName("td");
+for(let x = 0; x < e.length; x++){
+	e[x].style.removeProperty('max-width');
+	e[x].style.removeProperty('min-width');
+}
 var t = 12;
 function restaurar(){
     t = 12;
