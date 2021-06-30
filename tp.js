@@ -1,3 +1,11 @@
+function procuraTP(){
+	var procurarTP = document.getElementsByTagName("tr")[0].getElementsByTagName("th")
+	for(let x = 0; x < procurarTP.length; x++){
+		if(procurarTP[x].innerText === "TP"){
+		    return x;    
+		}
+	}
+}
 function tp(){
     /*let e = document.getElementsByTagName("td");
     for(let x = 0; x < e.length; x++){
@@ -12,14 +20,14 @@ function tp(){
     let lauda = document.getElementsByClassName("ant-table-row");
     let existe = "nao";
     for(let x = 0; x < lauda .length; x++){
-    	let tp = lauda[x].getElementsByClassName("ant-table-cell")[9].innerText;
+    	let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP()].innerText;
     	if(tp == "TP"){
 	    existe = "sim";
 	    break;
     	}
     }
     for(let x = 0; x < lauda .length; x++){
-        let tp = lauda[x].getElementsByClassName("ant-table-cell")[9].innerText;
+        let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP()].innerText;
 	let merchan = lauda[x].getElementsByClassName("ant-table-cell")[2].innerText;
         if(existe == "sim" && tp != "TP" && merchan != "MERC"){
             lauda[x].style.backgroundColor = "red";
