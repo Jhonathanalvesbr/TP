@@ -1,7 +1,7 @@
-function procuraTP(){
+function procuraTP(coluna){
 	var procurarTP = document.getElementsByTagName("tr")[0].getElementsByTagName("th")
 	for(let x = 0; x < procurarTP.length; x++){
-		if(procurarTP[x].innerText === "TP"){
+		if(procurarTP[x].innerText === coluna){
 		    return x;    
 		}
 	}
@@ -20,15 +20,15 @@ function tp(){
     let lauda = document.getElementsByClassName("ant-table-row");
     let existe = "nao";
     for(let x = 0; x < lauda .length; x++){
-    	let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP()].innerText;
+    	let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP("TP")].innerText;
     	if(tp == "TP"){
 	    existe = "sim";
 	    break;
     	}
     }
     for(let x = 0; x < lauda .length; x++){
-        let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP()].innerText;
-	let merchan = lauda[x].getElementsByClassName("ant-table-cell")[2].innerText;
+        let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP("TP")].innerText;
+	let merchan = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP("Tipo")].innerText;
         if(existe == "sim" && tp != "TP" && merchan != "MERC"){
             lauda[x].style.backgroundColor = "red";
         }
@@ -38,7 +38,7 @@ function tp(){
         if(tp == "TP"){
 	    for(x; x < lauda.length; x++){
 		let stylee = lauda[x].style.backgroundColor;
-	        let merchan = lauda[x].getElementsByClassName("ant-table-cell")[2].innerText;
+	        let merchan = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP("Tipo")].innerText;
 	        if(merchan == "MERC"){
 	            lauda[x].style.backgroundColor = "green";
 	        }
