@@ -60,6 +60,7 @@ function iniciar(){
 }
 function parar(){
 	clearInterval(iniciarLoop);
+	bool = 0;
 }
 var elemento_pai = document.body.getElementsByClassName("emotion-cache-1ku6cjw")[0];
 var b1 = document.createElement('button');
