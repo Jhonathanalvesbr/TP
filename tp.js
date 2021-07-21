@@ -1,4 +1,5 @@
 var iniciarLoop;
+var bool = 0;
 function procuraTP(coluna){
 	var procurarTP = document.getElementsByTagName("tr")[0].getElementsByTagName("th")
 	for(let x = 0; x < procurarTP.length; x++){
@@ -52,7 +53,10 @@ function tp(){
     }
 }
 function iniciar(){
-	iniciarLoop = setInterval(tp,1000);
+	if(bool == 0){
+		iniciarLoop = setInterval(tp,1000);
+		bool = bool + 1;
+	}
 }
 function parar(){
 	clearInterval(iniciarLoop);
