@@ -108,7 +108,7 @@ div33.appendChild(b2);
 
 
 
-
+/*
 //TAMANHO!!
 let e = document.getElementsByTagName("td");
 for(let x = 0; x < e.length; x++){
@@ -180,3 +180,4 @@ elemento_pai.appendChild(b3);
 b1.classList.add("ant-btn");
 b2.classList.add("ant-btn");
 b3.classList.add("ant-btn");
+*/
