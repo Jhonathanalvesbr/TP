@@ -1,3 +1,4 @@
+var iniciarLoop;
 function procuraTP(coluna){
 	var procurarTP = document.getElementsByTagName("tr")[0].getElementsByTagName("th")
 	for(let x = 0; x < procurarTP.length; x++){
@@ -50,7 +51,59 @@ function tp(){
         }
     }
 }
-setInterval(tp,1000);
+function iniciar(){
+	iniciarLoop = setInterval(tp,1000);
+}
+function parar(){
+	clearInterval(iniciarLoop);
+}
+var elemento_pai = document.body.getElementsByClassName("emotion-cache-1ku6cjw")[0];
+var b1 = document.createElement('button');
+var b2 = document.createElement('button');
+var bb1 = document.createTextNode("Iniciar");
+var bb2 = document.createTextNode("Parar");
+b1.addEventListener('click',iniciar);
+b2.addEventListener('click',parar);
+b1.appendChild(bb1);
+b2.appendChild(bb2);
+var div1 = document.createElement('div');
+var div2 = document.createElement('div');
+var div3 = document.createElement('div');
+div1.innerHTML = "&nbsp;"
+div1.classList.add("emotion-cache-1qmjjc1");
+div2.appendChild(div1);
+elemento_pai.appendChild(div2);
+b1.type = "button";
+b1.classList.add("ant-btn");
+div3.classList.add("emotion-cache-1qmjjc1");
+div3.style = "height: 22px;";
+div2.appendChild(div3);
+div3.appendChild(b1);
+var div11 = document.createElement('div');
+var div22 = document.createElement('div');
+var div33 = document.createElement('div');
+div11.innerHTML = "&nbsp;"
+div11.classList.add("emotion-cache-1qmjjc1");
+div22.appendChild(div11);
+elemento_pai.appendChild(div22);
+b2.type = "button";
+b2.classList.add("ant-btn");
+div33.classList.add("emotion-cache-1qmjjc1");
+div33.style = "height: 22px;";
+div22.appendChild(div33);
+div33.appendChild(b2);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
