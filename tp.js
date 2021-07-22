@@ -45,6 +45,13 @@ function tp(){
 			td[i].style.color = "white";
 		}
 	}
+	if(merchan == "ENC"){
+	    lauda[x].style.backgroundColor = "blue";
+	    var td = lauda[x].getElementsByTagName("td")
+		for(var i = 0; i < td.length; i++){
+			td[i].style.color = "white";
+		}
+	}
         if(tp == "TP"){
 	    for(x; x < lauda.length; x++){
 		let stylee = lauda[x].style.backgroundColor;
