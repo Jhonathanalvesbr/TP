@@ -8,6 +8,7 @@ function procuraTP(coluna){
 		}
 	}
 }
+var lauda;
 function tp(){
     /*let e = document.getElementsByTagName("td");
     for(let x = 0; x < e.length; x++){
@@ -19,7 +20,7 @@ function tp(){
     }
     e = document.getElementsByTagName("td");
     e[3].style.width = "50%";
-    let lauda = document.getElementsByClassName("ant-table-row");
+    lauda = document.getElementsByClassName("ant-table-row");
     let existe = "nao";
     for(let x = 0; x < lauda .length; x++){
     	let tp = lauda[x].getElementsByClassName("ant-table-cell")[procuraTP("TP")].innerText;
@@ -36,6 +37,13 @@ function tp(){
         }
 	if(merchan == "MERC"){
 	    lauda[x].style.backgroundColor = "green";
+	}
+	if(merchan == "PSG"){
+	    lauda[x].style.backgroundColor = "blue";
+	    var td = lauda[x].getElementsByTagName("td")
+		for(var i = 0; i < td.length; i++){
+			td[i].style.color = "white";
+		}
 	}
         if(tp == "TP"){
 	    for(x; x < lauda.length; x++){
@@ -97,6 +105,9 @@ div33.classList.add("emotion-cache-1qmjjc1");
 div33.style = "height: 22px;";
 div22.appendChild(div33);
 div33.appendChild(b2);
+
+
+
 
 
 
