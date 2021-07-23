@@ -111,3 +111,109 @@ div33.style = "height: 22px;";
 div22.appendChild(div33);
 div33.appendChild(b2);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//TAMANHO!!
+let e = document.getElementsByTagName("td");
+for(let x = 0; x < e.length; x++){
+	e[x].style.removeProperty('max-width');
+	e[x].style.removeProperty('min-width');
+}
+var t = 12;
+function restaurar(){
+    t = 12;
+    let itens = document.getElementsByClassName("ant-collapse-item");
+    for(let z = 0; z < itens.length; z++){
+	    let tabela = itens[z].getElementsByTagName("table");
+	    let tr = tabela[0].getElementsByTagName("tr");
+	    for(let x = 0; x < tr.length; x++){
+	    let td = tr[x].getElementsByTagName("td");
+		for(let i = 0; i < td.length; i++){
+		    td[i].style.removeProperty('max-height');
+		    td[i].style.fontSize = t+"px";
+		}
+	    }
+    }
+}
+function aumentar(){
+    t = t+1;
+    let itens = document.getElementsByClassName("ant-collapse-item");
+    for(let z = 0; z < itens.length; z++){
+	    let tabela = itens[z].getElementsByTagName("table");
+	    let tr = tabela[0].getElementsByTagName("tr");
+	    for(let x = 0; x < tr.length; x++){
+	    let td = tr[x].getElementsByTagName("td");
+		for(let i = 0; i < td.length; i++){
+		    td[i].style.removeProperty('max-height');
+		    td[i].style.fontSize = t+"px";
+		}
+	    }
+    }
+}
+function diminuir(){
+    t = t-1;
+    let itens = document.getElementsByClassName("ant-collapse-item");
+    for(let z = 0; z < itens.length; z++){
+	    let tabela = itens[z].getElementsByTagName("table");
+	    let tr = tabela[0].getElementsByTagName("tr");
+	    for(let x = 0; x < tr.length; x++){
+	    let td = tr[x].getElementsByTagName("td");
+		for(let i = 0; i < td.length; i++){
+		    td[i].style.removeProperty('max-height');
+		    td[i].style.fontSize = t+"px";
+		}
+	    }
+    }
+}
+var elemento_pai = document.body.getElementsByClassName("css-1ku6cjw")[1]
+var b1 = document.createElement('button');
+var b2 = document.createElement('button');
+var b3 = document.createElement('button');
+b1.addEventListener('click',aumentar);
+b2.addEventListener('click',diminuir);
+b3.addEventListener('click',restaurar);
+var bb1 = document.createTextNode("+");
+var bb2 = document.createTextNode("-");
+var bb3 = document.createTextNode("Restaurar");
+b1.appendChild(bb1);
+b2.appendChild(bb2);
+b3.appendChild(bb3);
+elemento_pai.appendChild(b1);
+elemento_pai.appendChild(b2);
+elemento_pai.appendChild(b3);
+b1.classList.add("ant-btn");
+b2.classList.add("ant-btn");
+b3.classList.add("ant-btn");
+*/
