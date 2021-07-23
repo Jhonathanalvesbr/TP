@@ -47,6 +47,7 @@ function tp(){
 	    lauda[x].style.backgroundColor = "blue";
 	    var td = lauda[x].getElementsByTagName("td")
 		for(var i = 0; i < td.length; i++){
+			td[i].style.backgroundColor = "blue";
 			td[i].style.color = "white";
 		}
 	}
