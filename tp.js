@@ -76,7 +76,7 @@ function parar(){
 	clearInterval(iniciarLoop);
 	bool = 0;
 }
-var elemento_pai = document.body.getElementsByClassName("emotion-cache-1ku6cjw")[0];
+var elemento_pai = document.getElementsByClassName("ant-card-body")[0].getElementsByTagName("div")[0];
 var b1 = document.createElement('button');
 var b2 = document.createElement('button');
 var bb1 = document.createTextNode("Iniciar");
