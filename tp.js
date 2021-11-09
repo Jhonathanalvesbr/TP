@@ -43,14 +43,14 @@ function tp(){
 			td[i].style.backgroundColor = "green";
 		}
 	}
-	if(merchan == "PSG" || merchan == "ENC" || passagem.indexOf("PASSAGEM DE BLOCO") > -1 || passagem.indexOf("ENCERRAMENTO") > -1){
+	/*if(merchan == "PSG" || merchan == "ENC" || passagem.indexOf("PASSAGEM DE BLOCO") > -1 || passagem.indexOf("ENCERRAMENTO") > -1){
 	    lauda[x].style.backgroundColor = "blue";
 	    var td = lauda[x].getElementsByTagName("td")
 		for(var i = 0; i < td.length; i++){
 			td[i].style.backgroundColor = "blue";
 			td[i].style.color = "white";
 		}
-	}
+	}*/
         if(tp == "TP"){
 	    for(x; x < lauda.length; x++){
 		let stylee = lauda[x].style.backgroundColor;
